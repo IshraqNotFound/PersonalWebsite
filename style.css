@@ -1,0 +1,179 @@
+@font-face {
+  font-family: 'sharpsans';
+  src: url('/samsungsharpsans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: 'sharpsans', sans-serif;
+  /*font-size: 15pt;*/
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+    font-size: 15px;
+}
+
+/*-------------Nav------------*/
+
+.nav-bar{
+  background-color:rgba(0, 0, 0, 1);
+  /*margin: 0px 0px 0px 0px;*/
+}
+
+.nav-ul{
+  width: 90%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-ul li{
+  height: 50px;
+}
+
+.nav-ul a{
+  height: 100%;
+  padding: 0px 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.nav-ul a:hover{
+  text-decoration: bold;
+  background-color: rgba(230, 230, 230, 0.30);
+  transition: 0.6s;
+  
+}
+
+.nav-list{
+  display: none;
+}
+
+.Brand{
+  margin-right: auto;
+}
+
+
+/*--------------Section 1--------------*/
+
+.intro {
+  background: url('/resources/background.png'), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)); /* Replace with your background image */
+  background-size: cover; /* Ensures the image covers the section */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+  background-position: center; /* Centers the background image */
+  position: relative; /* To position the overlay */
+  margin: 0 0 0 0; /* Horizontal centering */
+  padding: 20px; /* Optional: to add some space inside the section */
+}
+
+
+/*----------------WELCOME----------------*/
+
+.IITCLUB{
+  position: center;
+  text-align: center;
+  height: 50%;
+  padding: 10vh 50px;
+  color: aliceblue;
+}
+
+.IITCLUB h1{
+  font-size: 30px;
+}
+
+/*------------------SectionOne-------------------*/
+
+.sectionOne{
+  padding: 20px 20px 20px 20px;
+}
+
+/*--------------------SectionTwo-------------------*/
+.sectionTwo{
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutUs{
+  padding: 2px 3px 3px 2px;
+}
+
+.aboutUs button{
+  height: 40px;
+  width: 100px;
+  border-color: #0099FF;
+  border-radius: 40px;
+  background: none;
+  color: aliceblue;
+  border-style: solid;
+}
+
+.members{
+  background-color: #141D3B;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+  margin: 10px 10px 10px 10px ;
+}
+
+.footer{
+  
+}
+
+.spacer{
+  height: 1px;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.address{
+  display: flex;
+  justify-items: flex-start;
+}
+
+/*-----------------Phones----------------*/
+@media (max-width: 600px) {
+  .sectionTwo{
+    display: unset;
+  }
+  .members{
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    border-radius: 0;
+  }
+  
+  .nav-list{
+    display: unset;
+  }
+  
+  .nav-list ul{
+    list-style: none;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+  }
+  
+  .nav-list li a{
+    color: #FFFFFF;
+    margin: 1px 4px 1px 4px;
+    text-decoration: none;
+    font-size: 12px;
+    align-items: center;
+  }
+  
+  .nav-bar{
+    display: none;
+  }
+  
+  .Brand{
+    margin-right: auto;
+    font-weight: Bold;
+    font-size: 20px;
+  }
+  
+  .footer{
+    
+  }
+}

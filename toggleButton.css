@@ -1,0 +1,42 @@
+/* Style for the emoji toggle */
+.emoji-toggle {
+  position: right;
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  text-align: right;
+}
+
+.emoji-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.emoji-slider {
+  position: absolute;
+  cursor: pointer;
+  width: 120px;
+  height: 30px;
+  background-color: #002F5C;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+input:checked + .emoji-slider {
+  background-color: #FFCC00; /* Yellow for Sun */
+  color: #000000;
+}
+
+input:checked + .emoji-slider::before {
+  content: "🌞"; /* Sun emoji */
+}
+
+.emoji-slider::before {
+  content: "🌙"; /* Moon emoji */
+  transition: 0.3s;
+}
