@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'sharpsans';
-  src: url('/samsungsharpsans.otf') format('opentype');
+  src: url('samsungsharpsans.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
